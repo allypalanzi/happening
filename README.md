@@ -19,14 +19,13 @@ A Chrome extension that displays a personal dashboard.  Hacked up for Y-HACK 201
 
 ### Get Sassy
  
-We're using Sass. Read up [here](http://www.sass-lang.com).
-
-To edit any styles, you'll probably be going into _app.scss.
+We're using Sass. Read up [here](http://www.sass-lang.com). To edit any styles, you'll probably be going into _app.scss.
 
 To Compile:
+
 1. Open Terminal
-2. gem install sass
-3. sass --watch sass:css 
+2. `gem install sass` (You should only do this the first time)
+3. `sass --watch sass:css` 
 
 This opens Sass watch and will compile to CSS when you make changes. Kthxbai.
 
