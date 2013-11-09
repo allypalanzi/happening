@@ -169,6 +169,16 @@
 	font-size: 30px;
 }
 
+.close {
+	display: block;
+	position: absolute;
+	right: 20px;
+	top: 90px;
+	font-size: 25px;
+	cursor: pointer;
+	opacity: .8;
+}
+
 .profile {
 	li { 
 		display: inline-block;
