@@ -64,6 +64,12 @@
     FB.api('/me', function(response) {
       console.log('Good to see you, ' + response.name + '.');
     });
+
+   Fb.api('/me/friends/?fields=gender',function(responce)
+   {
+   	console.log(gender)
+   }
+
   }
 </script>
 
