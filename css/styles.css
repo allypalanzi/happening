@@ -194,7 +194,7 @@ button {
     opacity: .8; }
 
 .widget {
-  color: #fff;
+  background-color: #fff;
   display: inline-block;
   height: 150px;
   vertical-align: top; }
@@ -203,7 +203,7 @@ button {
   .widget:nth-child(2) {
     width: 45%; }
   .widget:nth-child(3) {
-    width: 50%; }
+    width: 55%; }
   .widget:nth-child(4) {
     width: 100%; }
   .widget:nth-child(5) {
@@ -214,6 +214,4 @@ button {
 .widget-header {
   font-size: 30px;
   font-weight: 400;
-  font-style: italic;
-  border-bottom: 1px solid white;
-  padding: 20px 20px 20px 0px; }
+  font-style: italic; }
