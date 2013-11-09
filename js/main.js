@@ -4,7 +4,7 @@ $(document).ready(function() {
 	$('.settings-module, .settings-bg').fadeToggle("show hide");
 	e.preventDefault();
     });
-    $('.settings-bg, .close').on('click', function(e){
+    $('.settings-bg, .close, .title').on('click', function(e){
     $('.settings-module, .settings-bg').fadeOut("hide");
 	e.preventDefault();
     });
