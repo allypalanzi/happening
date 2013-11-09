@@ -231,16 +231,6 @@ button {
   .widget li {
     list-style: none;
     padding: 20px; }
-  .widget:nth-child(2) {
-    width: 50%; }
-  .widget:nth-child(3) {
-    width: 50%; }
-  .widget:nth-child(4) {
-    width: 100%; }
-  .widget:nth-child(5) {
-    width: 30%; }
-  .widget:nth-child(6) {
-    width: 60%; }
 
 .widget-header {
   font-size: 30px;
