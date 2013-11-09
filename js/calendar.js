@@ -57,7 +57,7 @@ function makeApiCall() {
 		var eventDateTime = new Date(resp.items[i].start.dateTime);
 		var eventDate = new Date(resp.items[i].start.date);
 		var calElement;
-		if (eventDateTime === undefined) {
+		if (eventDateTime == undefined) {
 		    calElement = "<li><p>" +
 			eventTitle +
 			"</p><p>" +
