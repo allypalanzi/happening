@@ -44,6 +44,11 @@
 		width: 20px;
 		height:20px;
 	}
+
+	&:hover {
+		-webkit-transform: scale(1.5,1.5);
+		transform: scale(1.5,1.5);
+	}
 }
 
 .container {
@@ -63,20 +68,28 @@
 .settings-module {
 	margin: 0 auto;
 	width: 90%;
+	max-width: 800px;
+	
+	p {
+		margin-top: 20px;
+	}
 }
 
 .settings-module-app {
 	@extend %p-box-shadow;
+	border-radius: 2px;
 	background-color: #fff;
+	margin-top: -3px;
 	padding: 5%;
 }
 
 .colors {
 	margin-top: 30px;
 	li {
+		border-radius: 2px;
 		display: inline-block;
 		height: 50px;
-		margin-right: 10px;
+		margin: 10px 10px 10px 0px;
 		width: 50px;
 	}
 
@@ -106,17 +119,63 @@
 		text-decoration: none;
 	}
 	li {
+		border-radius: 2px;
 		display: inline-block;
 		padding: 20px;
 		background-color: rgba(255,255,255,.8);
+		transition: background .5s;
+		-webkit-transition: background .5s;
+		
+		@media(max-width: 500px) {
+			display: block;
+			text-align: center;
+		}
+		&:hover {
+			background-color: rgba(255,255,255,1);
+			transition: background .5s;
+			-webkit-transition: background .5s;
+		}
+
+	}
+
+	@media(max-width: 750px) {
+		margin-top: 100px;
 	}
 
 	.active {
 		background-color: rgba(255,255,255,1);
 	}
+
+
 }
 
 .settings-title {
 	color: $type;
-	font-size: 20px;
+	font-size: 30px;
+}
+
+.profile {
+	li { 
+		display: inline-block;
+		padding: 30px 30px 30px 0px;
+	}
+	img {
+		height: 75px;
+		margin-bottom: 20px;
+		width: 75px;
+	}
+
+	a {
+		color: $type;
+		text-decoration: none;
+	}
+}
+
+input {
+	border: 1px solid rgba(0,0,0,.2);
+	display: block;
+	font: {
+		size: 16px;
+	}
+	height: 26px;
 }

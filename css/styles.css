@@ -77,6 +77,9 @@ table {
   .menu-settings img {
     width: 20px;
     height: 20px; }
+  .menu-settings:hover {
+    -webkit-transform: scale(1.5, 1.5);
+    transform: scale(1.5, 1.5); }
 
 .container {
   margin: 0 auto;
@@ -91,18 +94,24 @@ table {
 
 .settings-module {
   margin: 0 auto;
-  width: 90%; }
+  width: 90%;
+  max-width: 800px; }
+  .settings-module p {
+    margin-top: 20px; }
 
 .settings-module-app {
+  border-radius: 2px;
   background-color: #fff;
+  margin-top: -3px;
   padding: 5%; }
 
 .colors {
   margin-top: 30px; }
   .colors li {
+    border-radius: 2px;
     display: inline-block;
     height: 50px;
-    margin-right: 10px;
+    margin: 10px 10px 10px 0px;
     width: 50px; }
   .colors .blue {
     background-color: #5dcfe2; }
@@ -121,12 +130,43 @@ table {
     color: #474747;
     text-decoration: none; }
   .settings-nav li {
+    border-radius: 2px;
     display: inline-block;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); }
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: background .5s;
+    -webkit-transition: background .5s; }
+    @media (max-width: 500px) {
+      .settings-nav li {
+        display: block;
+        text-align: center; } }
+    .settings-nav li:hover {
+      background-color: white;
+      transition: background .5s;
+      -webkit-transition: background .5s; }
+  @media (max-width: 750px) {
+    .settings-nav {
+      margin-top: 100px; } }
   .settings-nav .active {
     background-color: white; }
 
 .settings-title {
   color: #474747;
-  font-size: 20px; }
+  font-size: 30px; }
+
+.profile li {
+  display: inline-block;
+  padding: 30px 30px 30px 0px; }
+.profile img {
+  height: 75px;
+  margin-bottom: 20px;
+  width: 75px; }
+.profile a {
+  color: #474747;
+  text-decoration: none; }
+
+input {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: block;
+  font-size: 16px;
+  height: 26px; }
