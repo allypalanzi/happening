@@ -1,0 +1,19 @@
+<div id="fb-root"></div>
+<script src="http://connect.facebook.net/en_US/all.js"></script>
+<script>
+FB.init({appID:'', status: true, cookie: true, xfbml: true})
+FB.getLoginStatus(function(rsponce
+{
+	if (responce.session)
+	{
+		FB.api('/me', function(responce)
+		{
+			document.getElementByID('fb-root').innerHTML = "<h3>"+responce.name+" is logged in</h3>';"
+		});
+	}
+	else
+	{
+		document.getElementByID('fb-root').innerHTML = "<h3> No one is Logged in</h3>";
+	}
+});
+</script>
