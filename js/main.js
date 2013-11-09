@@ -1,9 +1,9 @@
 $(document).ready(function() {
 
-		$('.menu-settings-toggle').on('click', function(e){
-	    $('.settings-module').fadeToggle("show hide");
-	    e.preventDefault();
-	});
+    $('.menu-settings-toggle').on('click', function(e){
+	$('.settings-module').fadeToggle("show hide");
+	e.preventDefault();
+    });
 
     $(".settings-nav li").click(function() {
         $(".settings-nav li").removeClass('active');
