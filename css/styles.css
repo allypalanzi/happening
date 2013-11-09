@@ -113,7 +113,7 @@ button, button:hover {
   height: 100%;
   left: 0;
   opacity: .8;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   width: 100%;
@@ -175,13 +175,14 @@ button, button:hover {
   font-size: 30px; }
 
 .close {
+  color: #474747;
+  cursor: pointer;
   display: block;
+  font-size: 25px;
+  opacity: .3;
   position: absolute;
   right: 20px;
-  top: 90px;
-  font-size: 25px;
-  cursor: pointer;
-  opacity: .8; }
+  top: 90px; }
 
 .profile li {
   display: inline-block;
