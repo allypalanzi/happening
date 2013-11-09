@@ -78,15 +78,16 @@
 }
 
 .settings-bg {
-	background-color: black;
-	position: absolute;
-	top: 0;
+	background-color: $type;
 	bottom: 0;
-	right: 0;
-	left: 0;
-	z-index: 0;
-	width: 100%;
 	height: 100%;
+	left: 0;
+	opacity: .8;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 0;
 }
 
 .settings-module-app {
@@ -216,6 +217,7 @@ button {
 }
 
 .widget {
+	@extend %p-box-shadow;
 	background-color: #fff;
 	color: $type;
 	display: inline-block;

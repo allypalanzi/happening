@@ -63,13 +63,18 @@ function makeApiCall() {
 			"</p><p class='date'>" +
 			eventDate.toDateString() +
 			"</p></li>";
-		} else {
+		} else if (eventDateTime) {
 		    calElement = "<li><p class='title'>" +
 			eventTitle +
 			"</p><p class='date'>" + 
 			eventDateTime.toDateString() + 
 			" " +
 			eventDateTime.toLocaleTimeString() +
+			"</p></li>";
+		} else {
+		    calElement = "<li><p class='title'>" +
+			eventTitle +
+			"</p><p class='date'>" + 
 			"</p></li>";
 		}
 		calendarList.append(calElement);
