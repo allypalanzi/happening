@@ -46,14 +46,24 @@ function makeApiCall() {
 	    var calendarList = $(".calendar");
 	    for (var i = 0; i <resp.items.length; i++) {
 		var eventTitle = resp.items[i].summary;
-		var eventDate = resp.items[i].start.dateTime;
-		var calElement = "<li><p>" +
+		var eventDateTime = new Date(resp.items[i].start.dateTime);
+		var eventDate = new Date(resp.items[i].start.date);
+		var calElement;
+		if (eventDateTime === "undefined") {
+		    calElement = "<li><p>" +
+			eventTitle +
+			"</p><p>" +
+			eventDate.toDateString() +
+			"</p></li>";
+		} else {
+		    calElement = "<li><p>" +
 			eventTitle +
 			"</p><p>" + 
-			eventDate +
+			eventDateTime.toDateString() +
+			eventDateTime.toLocaleTimeString() +
 			"</p></li>";
+		}
 		calendarList.append(calElement);
-
 	    }
 	});
     });
