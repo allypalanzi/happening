@@ -1,10 +1,11 @@
-body { 
+.main { 
 	font: {
 		family: "open sans";
 	}
 	background: $green;
 	height: 100%;
 	width: 100%;
+	transition: background .5s;
 }
 
 .menu {
@@ -67,7 +68,35 @@ body {
 .settings-module-app {
 	@extend %p-box-shadow;
 	background-color: #fff;
-	padding: 10%;
+	padding: 5%;
+}
+
+.colors {
+	margin-top: 30px;
+	li {
+		display: inline-block;
+		height: 50px;
+		margin-right: 10px;
+		width: 50px;
+	}
+
+	.blue {
+		background-color: $blue;
+	}
+
+	.green {
+		background-color: $green;
+	}
+
+	.teal {
+		background-color: $teal;
+	}
+	.pink {
+		background-color: $pink;
+	}
+	.orange {
+		background-color: $orange;
+	}
 }
 
 .settings-nav {
