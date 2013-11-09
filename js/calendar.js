@@ -52,7 +52,7 @@ function makeApiCall() {
 			"</p><p>" + 
 			eventDate +
 			"</p></li>";
-		calendarList.appendChild(calElement);
+		calendarList.append(calElement);
 
 	    }
 	});
