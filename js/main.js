@@ -16,7 +16,7 @@ $(document).ready(function() {
 
     $(".colors li").click(function() {
     	var new_color = $(this).css('background-color');
-    	$('.main').css('background-color', new_color);
+    	$('.main, button').css('background-color', new_color);
 
     });
 
