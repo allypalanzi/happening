@@ -19,4 +19,4 @@ A Chrome extension that displays a personal dashboard.  Hacked up for Y-HACK 201
 
 ### Current Status:
 
-![](http:/i.imgur.com/IsJe5Og.jpg)
+![true story](http:/i.imgur.com/IsJe5Og.jpg)
