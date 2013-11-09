@@ -101,7 +101,9 @@ button, button:hover {
 .settings-module {
   margin: 0 auto;
   width: 90%;
-  max-width: 800px; }
+  max-width: 800px;
+  position: absolute;
+  left: 10%; }
   .settings-module p {
     margin-top: 20px; }
 
