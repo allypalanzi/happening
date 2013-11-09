@@ -43,7 +43,13 @@ table {
 
 .settings-module-app {
   box-shadow: 1px 0px 8px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 1px 0px 8px rgba(0, 0, 0, 0.1); }
+  -webkit-box-shadow: 1px 0px 8px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 0px 8px rgba(0, 0, 0, 0.1); }
+
+button, button:hover {
+  transition: opacity .5s;
+  -webkit-transition: opacity .5s;
+  -moz-transition: opacity .5s; }
 
 .main {
   font-family: "open sans";
