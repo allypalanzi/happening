@@ -37,11 +37,7 @@
           </div>
           <div id="setting2" class="settings-content hide">
             <h1 class="settings-title">Google Calendar</h1>
-              <form name="input">
-              <p>Gmail:</p>
-              <p><input type="text" name="email"> </p>
-              <p><input onclick="handleAuthClick()" type="submit" value="Submit"></p>
-              </form>
+	    <button onclick="handleAuthClick();">Authenticate!</button>
           </div>
           <div id="setting3" class="settings-content hide">
             <h1 class="settings-title">Twitter</h1>
@@ -64,6 +60,8 @@
 	</div>
 
     <script src="js/lib/jquery-2.0.3.min.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=CALLBACK"></script>
     <script src="js/main.js"></script>
+    <script src="js/calendar.js"></script>
   </body>
 </html>
