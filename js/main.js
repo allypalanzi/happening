@@ -4,7 +4,7 @@ $(document).ready(function() {
 	$('.settings-module, .settings-bg').fadeToggle("show hide");
 	e.preventDefault();
     });
-    $('.settings-bg, .close, .title').on('click', function(e){
+    $('.settings-bg, .close').on('click', function(e){
     $('.settings-module, .settings-bg').fadeOut("hide");
 	e.preventDefault();
     });
@@ -20,7 +20,7 @@ $(document).ready(function() {
 
     $(".colors li").click(function() {
     	var new_color = $(this).css('background-color');
-    	$('.main, button').css('background-color', new_color);
+    	$('.main, button, .title').css('background-color', new_color);
 
     });
 
