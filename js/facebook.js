@@ -71,6 +71,6 @@ function testAPI() {
 
 var widgets = $(".widgets");
 widgets.append(
-    "div id='fb-root'></div>"
+    "<div id='fb-root'></div>"
 );
 window.fbAsyncInit();
