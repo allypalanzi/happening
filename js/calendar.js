@@ -19,6 +19,7 @@ function checkAuth() {
 function handleAuthResult(authResult) {
     if(authResult && !authResult.error) {
 	makeApiCall();
+	alert("WOOOOO!");
     }
 }
 
