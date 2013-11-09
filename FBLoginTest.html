@@ -24,8 +24,19 @@ div id="fb-root"></div>
    }(document, 'script', 'facebook-jssdk'));
 </script>
 
-
-
+<script>
+FB.login(function(response) {
+   if (response.authResponse) {
+     console.log('Welcome!  Fetching your information.... ');
+     FB.api('/me', function(response) {
+       console.log('Good to see you, ' + response.name + '.');
+     });
+   } else {
+     console.log('User cancelled login or did not fully authorize.');
+   }
+ });
+</script>
+<!--
 <div id="fb-root"></div>
 <script src="http://connect.facebook.net/en_US/all.js"></script>
 <script>
@@ -45,5 +56,7 @@ FB.getLoginStatus(function(responce)
 	}
 });
 </script>
+-->
+
 </body>
 </html>
