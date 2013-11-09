@@ -83,7 +83,7 @@
 	height: 100%;
 	left: 0;
 	opacity: .8;
-	position: absolute;
+	position: fixed;
 	right: 0;
 	top: 0;
 	width: 100%;
@@ -170,13 +170,14 @@
 }
 
 .close {
+	color: $type;
+	cursor: pointer;
 	display: block;
+	font-size: 25px;
+	opacity: .3;
 	position: absolute;
 	right: 20px;
 	top: 90px;
-	font-size: 25px;
-	cursor: pointer;
-	opacity: .8;
 }
 
 .profile {
