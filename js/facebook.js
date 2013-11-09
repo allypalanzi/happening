@@ -19,7 +19,6 @@ window.fbAsyncInit = function() {
 	    // login status of the person. In this case, we're handling the situation where they 
 	    // have logged in to the app.
 	    testAPI();
-	    //testAPI2();
 	} else if (response.status === 'not_authorized') {
 	    // In this case, the person is logged into Facebook, but not into the app, so we call
 	    // FB.login() to prompt them to do so. 
@@ -57,13 +56,14 @@ function testAPI() {
     FB.api("me/notifications?limit=0", function(response){
 	var widgets = $(".widgets");
 	widgets.append(
-	    "<div class='facebook widget'>" +
+	    "<div class='facebook widget' id='fb-root'>" +
 		"<h1 class='widget-header'>Facebook</h1>"+
 		"<p class='notifs'>You have " +
 		"<span class='notifs'>" +
 		response.summary.unseen_count +
 		"</span>" +
 		" notifications.</p>" +
+"<fb:login-button show-faces='true' width='200' max-rows='1'></fb:login-button>" +
 		"</div>"
 	);
     });
