@@ -1,5 +1,5 @@
-var clientId = '1014651799520-qqic6pa07d46cjsokejf475qv2lee5ue.apps.googleusercontent.com';
-var apiKey = 'AIzaSyCqlEywG09p3a2SM2tKULGBZnbfR2oyNsU';
+var clientId = '309869438810.apps.googleusercontent.com';
+var apiKey =  'AIzaSyCIe6DUX_0MslcYYYUQf-8lH0CE4_e5Uvk';
 var scopes = 'https://www.googleapis.com/auth/calendar';
 
 function handleClientLoad() {
