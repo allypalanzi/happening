@@ -204,11 +204,14 @@ button {
 
 .widget {
 	background-color: #fff;
+	color: $type;
 	display: inline-block;
-	height: 150px;
 	vertical-align: top;
+	padding: 40px;
+	border-radius: 2px;
 	li {
 		list-style: none;
+		padding: 20px;
 	}
 
 	&:nth-child(2) {
@@ -232,4 +235,9 @@ button {
 	font-size: 30px;
 	font-weight: 400;
 	font-style: italic;
+}
+
+.title {
+	color: $green;
+	font-size: 20px;
 }

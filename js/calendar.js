@@ -58,15 +58,15 @@ function makeApiCall() {
 		var eventDate = new Date(resp.items[i].start.date);
 		var calElement;
 		if (eventDate) {
-		    calElement = "<li><p>" +
+		    calElement = "<li><p class='title'>" +
 			eventTitle +
-			"</p><p>" +
+			"</p><p class='date'>" +
 			eventDate.toDateString() +
 			"</p></li>";
 		} else {
-		    calElement = "<li><p>" +
+		    calElement = "<li><p class='title'>" +
 			eventTitle +
-			"</p><p>" + 
+			"</p><p class='date'>" + 
 			eventDateTime.toDateString() + 
 			" " +
 			eventDateTime.toLocaleTimeString() +

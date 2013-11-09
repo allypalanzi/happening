@@ -63,12 +63,16 @@
     console.log('Welcome!  Fetching your information.... ');
     FB.api("me/notifications?include_read=false", function(response){
     console.log(response);
-}
-    FB.api.("me/notifications/summary.unseen_count", function(responce){
-    	console.log(responce);
 });
    }
 
+   function testAPI2(){
+    FB.api.("me/notifications/summary.unseen_count", function(responce){
+    	console.log(responce);
+
+   });
+
+}
 </script>
 	
 <!--
