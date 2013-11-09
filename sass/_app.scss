@@ -1,0 +1,26 @@
+body { 
+	background: $green;
+	height: 100%;
+	width: 100%;
+}
+
+.menu {
+	position: absolute;
+	right: 20px;
+	top: 50px;
+	
+	h1 {
+		color: #fff;
+		font: {
+			family: "Open Sans";
+			weight: 200;
+		}
+		letter-spacing: 10px;
+		text-transform: uppercase;
+	}
+}
+
+.container {
+	margin: 0 auto;
+	width: 90%;	
+}
