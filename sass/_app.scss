@@ -242,26 +242,12 @@ button {
 	vertical-align: top;
 	padding: 40px;
 	border-radius: 2px;
+	width: 40%;
 	li {
 		list-style: none;
 		padding: 20px;
 	}
 
-	&:nth-child(2) {
-		width: 50%;
-	}
-	&:nth-child(3) {
-		width: 50%;
-	}
-	&:nth-child(4) {
-		width: 100%;
-	}
-	&:nth-child(5) {
-		width: 30%;
-	}
-	&:nth-child(6) {
-		width: 60%;
-	}
 }
 
 .widget-header {
