@@ -192,3 +192,28 @@ button {
   width: 250px; }
   button:hover {
     opacity: .8; }
+
+.widget {
+  color: #fff;
+  display: inline-block;
+  height: 150px;
+  vertical-align: top; }
+  .widget li {
+    list-style: none; }
+  .widget:nth-child(2) {
+    width: 45%; }
+  .widget:nth-child(3) {
+    width: 50%; }
+  .widget:nth-child(4) {
+    width: 100%; }
+  .widget:nth-child(5) {
+    width: 30%; }
+  .widget:nth-child(6) {
+    width: 60%; }
+
+.widget-header {
+  font-size: 30px;
+  font-weight: 400;
+  font-style: italic;
+  border-bottom: 1px solid white;
+  padding: 20px 20px 20px 0px; }
