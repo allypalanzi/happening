@@ -1,5 +1,5 @@
-var clientId = '1014651799520.apps.googleusercontent.com';
-var apiKey = 'AIzaSyBjf-uzt3Wggi6BEfLvFgAYHa1hGVJzCmg';
+var clientId = '1014651799520-qqic6pa07d46cjsokejf475qv2lee5ue.apps.googleusercontent.com';
+var apiKey = 'AIzaSyCqlEywG09p3a2SM2tKULGBZnbfR2oyNsU';
 var scopes = 'https://www.googleapis.com/auth/calendar';
 
 function handleClientLoad() {
@@ -34,7 +34,7 @@ function handleAuthClick(event) {
 
 function makeApiCall() {
     gapi.client.load('calendar', 'v3', function() {
-	var request = gapi.cleint.calendar.events.list({
+	var request = gapi.client.calendar.events.list({
 	    'calendarId': 'primary'
 	});
 
