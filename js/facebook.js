@@ -69,4 +69,4 @@ $(document).ready(function(){
 	});
     }
 });
-//window.fbAsyncInit();
+window.fbAsyncInit();
