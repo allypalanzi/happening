@@ -43,13 +43,21 @@ function makeApiCall() {
 	});
 
 	request.execute(function(resp) {
-	    var calendarList = $(".calendar");
+	    var widgets = $(".widgets");
+	    widgets.append(
+		"<div class='calendar widget'>" +
+		    "<h1 class='widget-header'>Upcoming Events</h1>"+
+		    "<ul class='calendar-list'>" +
+		    "</ul>" +
+		    "</div>"
+	    );
+	    var calendarList = $(".calendar-list");
 	    for (var i = 0; i <resp.items.length; i++) {
 		var eventTitle = resp.items[i].summary;
 		var eventDateTime = new Date(resp.items[i].start.dateTime);
 		var eventDate = new Date(resp.items[i].start.date);
 		var calElement;
-		if (eventDateTime === "undefined") {
+		if (eventDateTime === undefined) {
 		    calElement = "<li><p>" +
 			eventTitle +
 			"</p><p>" +
@@ -59,7 +67,8 @@ function makeApiCall() {
 		    calElement = "<li><p>" +
 			eventTitle +
 			"</p><p>" + 
-			eventDateTime.toDateString() +
+			eventDateTime.toDateString() + 
+			" " +
 			eventDateTime.toLocaleTimeString() +
 			"</p></li>";
 		}
