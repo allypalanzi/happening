@@ -63,14 +63,9 @@ function testAPI() {
 		response.summary.unseen_count +
 		"</span>" +
 		" notifications.</p>" +
-"<fb:login-button show-faces='true' width='200' max-rows='1'></fb:login-button>" +
 		"</div>"
 	);
     });
 }
 
-var widgets = $(".widgets");
-widgets.append(
-    "<div id='fb-root'></div>"
-);
 window.fbAsyncInit();
