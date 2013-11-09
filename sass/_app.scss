@@ -181,6 +181,7 @@ input {
 }
 
 button {
+	@extend %p-transition-opacity;
 	background-color: $green;
 	border-radius: 2px;
 	border: none;
@@ -194,6 +195,7 @@ button {
 	width: 250px;
 	
 	&:hover {
+		@extend %p-transition-opacity;
 		opacity: .8;
 
 	}
