@@ -43,8 +43,17 @@ function makeApiCall() {
 	});
 
 	request.execute(function(resp) {
+	    var calendarList = $(".calendar");
 	    for (var i = 0; i <resp.items.length; i++) {
-		console.log(resp.items[i].summary);
+		var eventTitle = resp.items[i].summary;
+		var eventDate = resp.items[i].start.dateTime;
+		var calElement = "<li><p>" +
+			eventTitle +
+			"</p><p>" + 
+			eventDate +
+			"</p></li>";
+		calendarList.appendChild(calElement);
+
 	    }
 	});
     });
