@@ -179,3 +179,22 @@ input {
 	}
 	height: 26px;
 }
+
+button {
+	background-color: $green;
+	border-radius: 2px;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: 200;
+	margin-top: 20px;
+	padding: 20px;
+	text-align: center;
+	width: 250px;
+	
+	&:hover {
+		opacity: .8;
+
+	}
+}
