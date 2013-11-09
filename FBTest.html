@@ -62,7 +62,7 @@
   function testAPI() {
     console.log('Welcome!  Fetching your information.... ');
     FB.api("me/notifications?include_read=false", function(response){
-    console.log(response[-1].unread);
+    console.log(response.unread);
 });
    }
 
