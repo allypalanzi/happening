@@ -19,7 +19,6 @@ function checkAuth() {
 function handleAuthResult(authResult) {
     if(authResult && !authResult.error) {
 	makeApiCall();
-	alert("WOOOOO!");
     }
 }
 
@@ -34,8 +33,13 @@ function handleAuthClick(event) {
 
 function makeApiCall() {
     gapi.client.load('calendar', 'v3', function() {
+	var today = new Date();
 	var request = gapi.client.calendar.events.list({
-	    'calendarId': 'primary'
+	    "calendarId": "primary",
+	    "singleEvents": true,
+	    "orderBy": "startTime",
+	    "timeMin": today.toISOString(),
+	    "maxResults": 4
 	});
 
 	request.execute(function(resp) {
