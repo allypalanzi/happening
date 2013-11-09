@@ -1,5 +1,12 @@
 // Colors
 
-$green : #a5c476;
+$green  : #a5c476;
+$type 	: #474747;
 
 //
+
+%p-box-shadow {
+	box-shadow: 1px 0px 8px rgba(0,0,0,.1);
+	-webkit-box-shadow: 1px 0px 8px rgba(0,0,0,.1);
+
+}

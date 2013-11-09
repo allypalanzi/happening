@@ -7,10 +7,37 @@
   </head>
   <body>
   	<nav class="menu">
-  		<h1>happening</h1>
-  		<a href="#">settings</a>
+      <ul>
+        <li><h1>happening</h1></li>
+  		  <li><a href="#" class="menu-settings menu-settings-toggle"><img src="img/settings.svg"></a></li>
+      </ul>
   	</nav>
   	<div class="container">
+
+      <div class="settings-module hide">
+        <nav class="settings-nav">
+          <ul>
+            <li class="active"><a href="#setting1">Settings</a></li>
+            <li><a href="#setting2">Settings</a></li>
+            <li><a href="#setting3">Settings</a></li>
+            <li><a href="#setting4">Settings</a></li>
+          </ul>
+        </nav>
+        <div class="settings-module-app">
+          <div id="setting1" class="settings-content show">
+            <h1 class="settings-title">Google Calendar</h1>
+          </div>
+          <div id="setting2" class="settings-content hide">
+            <h1 class="settings-title">Meow</h1>
+          </div>
+          <div id="setting3" class="settings-content hide">
+            <h1 class="settings-title">Facebook</h1>
+          </div>
+          <div id="setting4" class="settings-content hide">
+            <h1 class="settings-title">Google</h1>
+          </div>
+      </div>
+      </div>
 	</div>
 
     <script src="js/lib/jquery-2.0.3.min.js"></script>

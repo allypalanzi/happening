@@ -1,4 +1,7 @@
 body { 
+	font: {
+		family: "open sans";
+	}
 	background: $green;
 	height: 100%;
 	width: 100%;
@@ -8,19 +11,83 @@ body {
 	position: absolute;
 	right: 20px;
 	top: 50px;
+	vertical-align: center;
+
 	
 	h1 {
 		color: #fff;
+		display: inline;
 		font: {
 			family: "Open Sans";
+			size: 18px;
 			weight: 200;
 		}
 		letter-spacing: 10px;
 		text-transform: uppercase;
 	}
+
+	li {
+		display: inline-block;
+		margin-right: 30px;
+		vertical-align: middle;
+
+	}
+}
+
+.menu-settings {
+	display: block;
+	width: 20px;
+	height: 20px;
+	
+	img { 
+		width: 20px;
+		height:20px;
+	}
 }
 
 .container {
 	margin: 0 auto;
+	margin-top: 10%;
 	width: 90%;	
+}
+
+.show {
+	display: block;
+}
+
+.hide {
+	display: none;
+}
+
+.settings-module {
+	margin: 0 auto;
+	width: 90%;
+}
+
+.settings-module-app {
+	@extend %p-box-shadow;
+	background-color: #fff;
+	padding: 10%;
+}
+
+.settings-nav {
+	margin: 0 auto;
+	a {
+		color: $type;
+		text-decoration: none;
+	}
+	li {
+		display: inline-block;
+		padding: 20px;
+		background-color: rgba(255,255,255,.8);
+	}
+
+	.active {
+		background-color: rgba(255,255,255,1);
+	}
+}
+
+.settings-title {
+	color: $type;
+	font-size: 20px;
 }

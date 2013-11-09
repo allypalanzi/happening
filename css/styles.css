@@ -41,7 +41,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.settings-module-app {
+  box-shadow: 1px 0px 8px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 1px 0px 8px rgba(0, 0, 0, 0.1); }
+
 body {
+  font-family: "open sans";
   background: #a5c476;
   height: 100%;
   width: 100%; }
@@ -49,14 +54,60 @@ body {
 .menu {
   position: absolute;
   right: 20px;
-  top: 50px; }
+  top: 50px;
+  vertical-align: center; }
   .menu h1 {
     color: #fff;
+    display: inline;
     font-family: "Open Sans";
+    font-size: 18px;
     font-weight: 200;
     letter-spacing: 10px;
     text-transform: uppercase; }
+  .menu li {
+    display: inline-block;
+    margin-right: 30px;
+    vertical-align: middle; }
+
+.menu-settings {
+  display: block;
+  width: 20px;
+  height: 20px; }
+  .menu-settings img {
+    width: 20px;
+    height: 20px; }
 
 .container {
   margin: 0 auto;
+  margin-top: 10%;
   width: 90%; }
+
+.show {
+  display: block; }
+
+.hide {
+  display: none; }
+
+.settings-module {
+  margin: 0 auto;
+  width: 90%; }
+
+.settings-module-app {
+  background-color: #fff;
+  padding: 10%; }
+
+.settings-nav {
+  margin: 0 auto; }
+  .settings-nav a {
+    color: #474747;
+    text-decoration: none; }
+  .settings-nav li {
+    display: inline-block;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); }
+  .settings-nav .active {
+    background-color: white; }
+
+.settings-title {
+  color: #474747;
+  font-size: 20px; }
