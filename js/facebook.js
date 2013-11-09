@@ -56,7 +56,7 @@ function testAPI() {
     FB.api("me/notifications?limit=0", function(response){
 	var widgets = $(".widgets");
 	widgets.append(
-	    "<div class='facebook widget' id='fb-root'>" +
+	    "<div class='facebook widget'>" +
 		"<h1 class='widget-header'>Facebook</h1>"+
 		"<p class='notifs'>You have " +
 		"<span class='notifs'>" +
@@ -68,3 +68,9 @@ function testAPI() {
 	);
     });
 }
+
+var widgets = $(".widgets");
+widgets.append(
+    "div id='fb-root'></div>"
+);
+window.fbAsyncInit();
