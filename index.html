@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Happening</title>
+	<link rel="stylesheet" type="text/css" href="http://www.google.com/fonts#UsePlace:use/Collection:Open+Sans:300italic,400italic,400,300">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body class="main">
+  	<nav class="menu">
+      <ul>
+        <li><h1>happening</h1></li>
+  		  <li><a href="#" class="menu-settings menu-settings-toggle"><img src="img/settings.svg"></a></li>
+      </ul>
+  	</nav>
+  	<div class="container">
+
+      <div class="settings-module hide">
+        <nav class="settings-nav">
+          <ul>
+            <li class="active"><a href="#setting1"><img src="img/edit.svg"></a></li>
+            <li><a href="#setting2"><img src="img/calendar.svg"></a></li>
+            <li><a href="#setting3"><img src="img/twitter.svg"></a></li>
+            <li><a href="#setting4"><img src="img/facebook.svg"></a></li>
+            <li><a href="#setting5"><img src="img/about.svg"></a></li>
+          </ul>
+        </nav>
+        <div class="settings-module-app">
+          <div id="setting1" class="settings-content show">
+            <h1 class="settings-title">Background Color:</h1>
+            <ul class="colors">
+              <li class="green"></li>
+              <li class="teal"></li>
+              <li class="blue"></li>
+              <li class="pink"></li>
+              <li class="orange"></li>
+            </ul>
+          </div>
+          <div id="setting2" class="settings-content hide">
+            <h1 class="settings-title">Google Calendar</h1>
+              <form name="input">
+              <p>Username:</p>
+              <p><input type="text" name="user"> </p>
+              </form>             
+              <form name="input">
+              <p>Password:</p>
+              <p><input type="password" name="user"></p>
+              <p><input type="submit" value="Submit"></p>
+              </form>
+          </div>
+          <div id="setting3" class="settings-content hide">
+            <h1 class="settings-title">Twitter</h1>
+          </div>
+          <div id="setting4" class="settings-content hide">
+            <h1 class="settings-title">Facebook</h1>
+          </div>          
+          <div id="setting5" class="settings-content hide">
+            <h1 class="settings-title">We're awesome.</h1>
+            <ul class="profile">
+              <li><img src="img/louis.jpg"><br><a href="#">Louis Fettet</a></li>
+              <li><img src="img/ally.jpg"><br><a href="#">Ally Palanzi</a></li>
+              <li><img src="img/jc.jpg"><br><a href="#">Jc Tecklenburg</a></li>
+              <li><img src="img/tyler.jpg"><br><a href="#">Tyler Wanner</a></li>
+            </ul>
+            <p>We made this at Y-Hack 2013. View our codes on <a href="#">Github</a>!</p>
+          </div>
+      </div>
+      </div>
+	</div>
+
+    <script src="js/lib/jquery-2.0.3.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
