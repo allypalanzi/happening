@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     $('.menu-settings-toggle').on('click', function(e){
-	$('.settings-module').fadeToggle("show hide");
+	$('.settings-module, .settings-bg').fadeToggle("show hide");
 	e.preventDefault();
     });
 
