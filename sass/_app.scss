@@ -83,7 +83,7 @@
 	height: 100%;
 	left: 0;
 	opacity: .8;
-	position: absolute;
+	position: fixed;
 	right: 0;
 	top: 0;
 	width: 100%;
@@ -167,6 +167,17 @@
 .settings-title {
 	color: $type;
 	font-size: 30px;
+}
+
+.close {
+	color: $type;
+	cursor: pointer;
+	display: block;
+	font-size: 25px;
+	opacity: .3;
+	position: absolute;
+	right: 20px;
+	top: 90px;
 }
 
 .profile {
