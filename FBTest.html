@@ -59,15 +59,13 @@
 
   // Here we run a very simple test of the Graph API after login is successful. 
   // This testAPI() function is only called in those cases. 
-  var notificationarray;
   function testAPI() {
     console.log('Welcome!  Fetching your information.... ');
     FB.api({
     method: 'fql.query',
     query: 'SELECT notification_id, sender_id, title_html, body_html, href'
         + ' FROM notification'
-        + ' WHERE recipient_id=' + uid
-        + ' AND is_unread = 1'
+        + ' WHERE is_unread = 1'   //recipient_id=' + uid  + ' AND 
         + ' AND is_hidden = 0'
 }, function(response){
     console.log(response);
