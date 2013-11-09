@@ -28,6 +28,7 @@
       // login status of the person. In this case, we're handling the situation where they 
       // have logged in to the app.
       testAPI();
+      testAPI2();
     } else if (response.status === 'not_authorized') {
       // In this case, the person is logged into Facebook, but not into the app, so we call
       // FB.login() to prompt them to do so. 
@@ -61,18 +62,20 @@
   // This testAPI() function is only called in those cases. 
   function testAPI() {
     console.log('Welcome!  Fetching your information.... ');
-    FB.api("me/notifications?include_read=false", function(response){
+    //FB.api("me/notifications?include_read=false", function(response){
+    FB.api("me/notifications?limit=0", function(response){	
     console.log(response);
 });
    }
 
-   function testAPI2(){
-    FB.api.("me/notifications/summary.unseen_count", function(responce){
-    	console.log(responce);
+//    function testAPI2() {
+//    	console.log('Welcome!  Fetching your information.... ');
+//     FB.api.("me/notifications/summary.unseen_count", function(responce){
+//     	console.log(responce);
 
-   });
+//    });
 
-}
+// }
 </script>
 	
 <!--
